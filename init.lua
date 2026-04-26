@@ -24,7 +24,7 @@ require("lazy").setup({
             -- [[ Configure Treesitter ]] See `:help nvim-treesitter-intro`
             config = function()
                 local ts = require('nvim-treesitter')
-                local ts_install_dir = vim.env.XDG_DATA_DIRS .. '/nvim/site'
+                local ts_install_dir = vim.env.XDG_DATA_DIRS .. 'nvim/site'
                 -- local ts_install_dir = vim.fn.stdpath('data') .. '/site'
                 ts.setup({
                     install_dir = ts_install_dir
