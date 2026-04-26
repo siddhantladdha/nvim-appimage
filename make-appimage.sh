@@ -10,7 +10,7 @@ export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=./nvim.svg
 export DESKTOP=./nvim.desktop
-
+export XDG_DATA_DIRS=/usr/share/
 # Deploy dependencies
 quick-sharun "$(command -v nvim)"  "$XDG_DATA_DIRS/nvim/site"
 
