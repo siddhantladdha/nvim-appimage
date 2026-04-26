@@ -12,7 +12,7 @@ export ICON=./nvim.svg
 export DESKTOP=./nvim.desktop
 
 # Deploy dependencies
-quick-sharun "$(command -v nvim)" "$HOME/.config/nvim" "$HOME/.local/share/nvim"
+quick-sharun "$(command -v nvim)" ./.local/share/nvim/site/
 
 # Additional changes can be done in between here
 
