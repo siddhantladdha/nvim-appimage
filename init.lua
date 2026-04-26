@@ -24,10 +24,11 @@ require("lazy").setup({
             -- [[ Configure Treesitter ]] See `:help nvim-treesitter-intro`
             config = function()
                 local ts = require('nvim-treesitter')
+                local ts_install_dir = vim.fn.stdpath('data') .. '/site'
                 ts.setup({
-                    install_dir = vim.fn.stdpath('data') .. '/site'
+                    install_dir = ts_install_dir
                 })
-                print("Treesitter install_dir is " .. install_dir)
+                print("Treesitter install_dir is " .. ts_install_dir)
                 -- ensure basic parser are installed
                 -- Execute `:=require('nvim-treesitter').get_available()`
                 ts.install({ 
