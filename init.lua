@@ -1,6 +1,7 @@
 -- Bootstrap lazy.nvim
 print("Started nvim in headless mode")
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+print("lazypath is " .. lazypath)
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
     local lazyrepo = "https://github.com/folke/lazy.nvim.git"
     local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
@@ -26,6 +27,7 @@ require("lazy").setup({
                 ts.setup({
                     install_dir = vim.fn.stdpath('data') .. '/site'
                 })
+                print("Treesitter install_dir is " .. install_dir)
                 -- ensure basic parser are installed
                 -- Execute `:=require('nvim-treesitter').get_available()`
                 ts.install({ 
