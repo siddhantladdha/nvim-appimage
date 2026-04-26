@@ -20,6 +20,7 @@ pacman -Syu --noconfirm neovim tree-sitter-cli nodejs
 # Change NVIM_APPNAME if you need to make any changes to where all the
 # plugins, parsers are downloaded.
 # NVIM_APPNAME=nvim nvim -u ./init.lua --headless
+export XDG_DATA_DIRS=/usr/share/
 nvim -u ./init.lua --headless
 
 # if you also have to make nightly releases check for DEVEL_RELEASE = 1
