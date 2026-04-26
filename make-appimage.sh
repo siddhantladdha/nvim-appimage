@@ -13,8 +13,8 @@ export DESKTOP=./nvim.desktop
 export XDG_DATA_DIRS=/usr/share/
 ts_install_subdir = "nvim/site"
 # Deploy dependencies
-quick-sharun "$(command -v nvim)"  "$XDG_DATA_DIRS$ts_install_subdir"
-
+# quick-sharun "$(command -v nvim)"  "$XDG_DATA_DIRS$ts_install_subdir"
+quick-sharun "$(command -v nvim)"
 # Additional changes can be done in between here
 
 # Turn AppDir into AppImage
