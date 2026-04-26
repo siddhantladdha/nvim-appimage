@@ -11,8 +11,9 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=./nvim.svg
 export DESKTOP=./nvim.desktop
 export XDG_DATA_DIRS=/usr/share/
+ts_install_subdir = "nvim/site"
 # Deploy dependencies
-quick-sharun "$(command -v nvim)"  "$XDG_DATA_DIRS/nvim/site"
+quick-sharun "$(command -v nvim)"  "$XDG_DATA_DIRS$ts_install_subdir"
 
 # Additional changes can be done in between here
 
