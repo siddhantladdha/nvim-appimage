@@ -1,19 +1,20 @@
 <div align="center">
 
-# TEMPLATE-AppImage 🐧
+# nvim-appimage 🐧
 
-[![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/TEMPLATE-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
-[![CI Build Status](https://github.com/pkgforge-dev/TEMPLATE-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
-[![Latest Stable Release](https://img.shields.io/github/v/release/pkgforge-dev/TEMPLATE-AppImage)](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest)
+[![GitHub Downloads](https://img.shields.io/github/downloads/siddhantladdha/nvim-appimage/total?logo=github&label=GitHub%20Downloads)](https://github.com/siddhantladdha/nvim-appimage/releases/latest)
+[![CI Build Status](https://github.com/siddhantladdha/nvim-appimage/actions/workflows/appimage.yml/badge.svg)](https://github.com/siddhantladdha/nvim-appimage/releases/latest)
+[![Latest Stable Release](https://img.shields.io/github/v/release/siddhantladdha/nvim-appimage)](https://github.com/siddhantladdha/nvim-appimage/releases/latest)
 
 <p align="center">
-  <img src="https://github.com/pkgforge-dev.png" width="128" />
+  <img src="https://raw.githubusercontent.com/neovim/neovim.github.io/master/static/logos/neovim-logo-300x87.png" alt="Neovim" width="128">
+  <img src="hhttps://raw.githubusercontent.com/siddhantladdha/nvim-appimage/refs/heads/main/nvim.svg" alt="Treesitter" width="128">
 </p>
 
 
 | Latest Stable Release | Upstream URL |
 | :---: | :---: |
-| [Click here](https://github.com/pkgforge-dev/TEMPLATE-AppImage/releases/latest) | [Click here](https://github.com/pkgforge-dev/Anylinux-AppImages) |
+| [Click here](https://github.com/siddhantladdha/nvim-appimage/releases/latest) | [Click here](https://github.com/pkgforge-dev/Anylinux-AppImages) |
 
 </div>
 
@@ -25,9 +26,7 @@ AppImage made using [sharun](https://github.com/VHSgunzo/sharun) and its wrapper
 
 This AppImage doesn't require FUSE to run at all, thanks to the [uruntime](https://github.com/VHSgunzo/uruntime).
 
-This AppImage is also supplied with a self-updater by default, so any updates to this application won't be missed, you will be prompted for permission to check for updates and if agreed you will then be notified when a new update is available.
-
-Self-updater is disabled by default if AppImage managers like [am](https://github.com/ivan-hc/AM), [soar](https://github.com/pkgforge/soar) or [dbin](https://github.com/xplshn/dbin) exist, which manage AppImage updates.
+Self-updater is disabled by default.
 
 <details>
   <summary><b><i>raison d'être</i></b></summary>
@@ -35,6 +34,24 @@ Self-updater is disabled by default if AppImage managers like [am](https://githu
   </a>
 </details>
 
----
+## Template repository
+
+- This is a forkable repository, based on the excellent [forkable template](https://github.com/pkgforge-dev/TEMPLATE-AppImage). Fork it, if you want to make changes, otherwise feel free to download the released appimage.
+
+## Actions setup
+
+- Go to your Actions settings -> General -> Actions Permissions
+- Select **Allow _your username_, and select _your username_, actions and reusable workflows.**
+- Add the following to **Allow or block specified actions and reusable workflows**.
+
+```
+actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8,
+actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd,
+actions/download-artifact@37930b1c2abaa49bbe596cd826c3c89aef350131,
+actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f,
+pkgforge-dev/anylinux-setup-action@0964f2258d6c93d1391359978dde081fd8b3c6af,
+pkgforge-dev/make-stable-appimage-release@4ed3d48ccb065352b6e6c0db6d39885b201c54a0,
+softprops/action-gh-release@5be0e66d93ac7ed76da52eca8bb058f665c3a5fe,
+```
 
 More at: [AnyLinux-AppImages](https://pkgforge-dev.github.io/Anylinux-AppImages/)
