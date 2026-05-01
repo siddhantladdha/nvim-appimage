@@ -30,13 +30,16 @@ Self-updater is disabled by default.
 
 <details>
   <summary><b><i>raison d'être</i></b></summary>
-    <img src="https://github.com/user-attachments/assets/d40067a6-37d2-4784-927c-2c7f7cc6104b" alt="Inspiration Image">
-  </a>
+  <img width="1151" height="430" alt="nvim-v0.12" src="https://github.com/user-attachments/assets/ed075c23-cfcd-4664-b934-815718407d07" />
+  <img width="2549" height="1067" alt="treesitter parsers" src="https://github.com/user-attachments/assets/5a4710a6-7830-4561-928d-da01ece4ecbb" />
+  <img width="2549" height="1098" alt="treesitter queries" src="https://github.com/user-attachments/assets/766d083c-3f0d-4f68-8ec5-4afb8a5e9324" />
+<img width="1918" height="375" alt="fuck glibc" src="https://github.com/user-attachments/assets/8f914cf1-c9ec-412f-8009-be82e0faca39" />
 </details>
 
-## Template repository
+## Make it your own.
 
 - This is a forkable repository, based on the excellent [forkable template](https://github.com/pkgforge-dev/TEMPLATE-AppImage). Fork it, if you want to make changes, otherwise feel free to download the released appimage.
+- `init.lua` is the minimal config which is used to install plugins and parsers. Add your language to the list of parsers and run the the workflow *Anylinux-AppImage*.
 
 ## Actions setup
 
