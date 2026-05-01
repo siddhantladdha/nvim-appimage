@@ -8,7 +8,7 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/neovim/neovim.github.io/master/static/logos/neovim-logo-300x87.png" alt="Neovim" width="128">
-  <img src="hhttps://raw.githubusercontent.com/siddhantladdha/nvim-appimage/refs/heads/main/nvim.svg" alt="Treesitter" width="128">
+  <img src="https://raw.githubusercontent.com/siddhantladdha/nvim-appimage/refs/heads/main/nvim.svg" alt="Treesitter" width="128">
 </p>
 
 
