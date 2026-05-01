@@ -6,7 +6,8 @@ ARCH=$(uname -m)
 VERSION=$(pacman -Q nvim | awk '{print $2; exit}')
 export ARCH VERSION
 export OUTPATH=./dist
-export ADD_HOOKS="self-updater.hook"
+# Uncomment to add self-update possible.
+# export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
 export ICON=./nvim.svg
 export DESKTOP=./nvim.desktop
