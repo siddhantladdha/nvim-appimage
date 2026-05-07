@@ -15,7 +15,7 @@ export DESKTOP=./nvim.desktop
 # and sharun autorecognizes them and works with it.
 export XDG_DATA_DIRS=/usr/share/
 export URUNTIME_PRELOAD=1
-export APPIMAGE_EXTRACT_AND_RUN=1
+# export APPIMAGE_EXTRACT_AND_RUN=1
 # ts_install_subdir="nvim/site"
 # Deploy dependencies
 # quick-sharun "$(command -v nvim)"  "$XDG_DATA_DIRS$ts_install_subdir"
